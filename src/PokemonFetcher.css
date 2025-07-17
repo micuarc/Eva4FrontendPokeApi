@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.cdnfonts.com/css/pokemon-solid");
+
+.pokemon-bg {
+  min-height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
+    url("./assets/background.gif");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+
+.pokemon-container {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  padding: 2rem;
+  color: white;
+  width: 95%;
+  max-width: 1100px !important;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  min-height: 80vh;
+  backdrop-filter: blur(8px);
+  position: relative;
+}
+
+.pokemon-card {
+  width: 100%;
+  max-width: 220px;
+  text-align: center;
+  background-color: #fff;
+  border-radius: 1rem;
+  padding: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.pokemon-card:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 10px rgba(255, 255, 255, 0.4);
+}
+
+.pokemon-card img {
+  height: 96px;
+  width: 96px;
+}
+
+h1 {
+  font-size: 4rem !important;
+}
+
+/* font de pokemon tradicioanl */
+.nombrePokemon {
+  font-family: "Pokemon Solid";
+  letter-spacing: 0.1em;
+  font-weight: 300;
+  color: #ffcb05 !important;
+  text-shadow: -2px -2px 0 #3b4cca, 2px -2px 0 #3b4cca, -2px 2px 0 #3b4cca,
+    2px 2px 0 #3b4cca, -3px 0 0 #3b4cca, 3px 0 0 #3b4cca, 0 -3px 0 #3b4cca,
+    0 3px 0 #3b4cca, 0 0 6px rgba(0, 0, 0, 0.6), 0 0 12px rgba(0, 0, 0, 0.4);
+}
+
+/* badges tradicionales de pokemon segun tipo */
+.badge-tipo {
+  color: #fff;
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-weight: 100;
+  text-transform: uppercase;
+  font-size: 0.43rem;
+  margin-right: 6px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+  display: inline-block;
+  min-width: 70px;
+  text-align: center;
+  text-shadow: -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000,
+    1px 1px 0 #000;
+}
+
+.badge-tipo.normal {
+  background-color: #a8a77a;
+  box-shadow: 0 0 8px #a8a77a;
+}
+
+.badge-tipo.fuego {
+  background-color: #ee8130;
+  box-shadow: 0 0 8px #ee8130;
+}
+
+.badge-tipo.agua {
+  background-color: #6390f0;
+  box-shadow: 0 0 8px #6390f0;
+}
+
+.badge-tipo.eléctrico {
+  background-color: #f7d02c;
+  box-shadow: 0 0 8px #f7d02c;
+}
+
+.badge-tipo.planta {
+  background-color: #7ac74c;
+  box-shadow: 0 0 8px #7ac74c;
+}
+
+.badge-tipo.hielo {
+  background-color: #96d9d6;
+  box-shadow: 0 0 8px #96d9d6;
+}
+
+.badge-tipo.lucha {
+  background-color: #c22e28;
+  box-shadow: 0 0 8px #c22e28;
+}
+
+.badge-tipo.veneno {
+  background-color: #a33ea1;
+  box-shadow: 0 0 8px #a33ea1;
+}
+
+.badge-tipo.tierra {
+  background-color: #e2bf65;
+  box-shadow: 0 0 8px #e2bf65;
+}
+
+.badge-tipo.volador {
+  background-color: #a98ff3;
+  box-shadow: 0 0 8px #a98ff3;
+}
+
+.badge-tipo.psíquico {
+  background-color: #f95587;
+  box-shadow: 0 0 8px #f95587;
+}
+
+.badge-tipo.bicho {
+  background-color: #a6b91a;
+  box-shadow: 0 0 8px #a6b91a;
+}
+
+.badge-tipo.roca {
+  background-color: #b6a136;
+  box-shadow: 0 0 8px #b6a136;
+}
+
+.badge-tipo.fantasma {
+  background-color: #735797;
+  box-shadow: 0 0 8px #735797;
+}
+
+.badge-tipo.dragón {
+  background-color: #6f35fc;
+  box-shadow: 0 0 8px #6f35fc;
+}
+
+.badge-tipo.siniestro {
+  background-color: #705746;
+  box-shadow: 0 0 8px #705746;
+}
+
+.badge-tipo.acero {
+  background-color: #b7b7ce;
+  box-shadow: 0 0 8px #b7b7ce;
+}
+
+.badge-tipo.hada {
+  background-color: #d685ad;
+  box-shadow: 0 0 8px #d685ad;
+}
+
+.modal-content-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.modal-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 180px;
+}
+
+.pokemon-modal-img {
+  width: 140px;
+  height: 140px;
+  object-fit: contain;
+  margin-bottom: 1rem;
+}
+
+.pokemon-modal-tipos {
+  display: flex;
+  gap: 0.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.modal-right {
+  flex: 1;
+}
+
+.modal-right h6 {
+  margin-bottom: 0.75rem;
+}
+
+.modal-stats-list {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.modal-stats-list li {
+  margin-bottom: 0.5rem;
+  font-family: "Press Start 2P", cursive;
+  font-weight: 300;
+  font-size: 0.7rem;
+  text-transform: capitalize;
+  color: #222;
+}
+
+.spinner-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  backdrop-filter: blur(3px);
+}
+
+.valorPoke {
+  margin: 0;
+  padding: 0;
+  color: #f00;
+  display: inline;
+}
+
+.rbt-close-content {
+  display: none;
+}
+
+.rbt-close {
+  padding: 0 !important;
+}
+
+.rbt-aux {
+  margin-right: 3px;
+}
